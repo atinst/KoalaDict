@@ -44,12 +44,13 @@
         <local:Translate x:Name="Tra" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" Visibility="Hidden" />
 
         <Border x:Name="BdBrowser" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" >
-            <WebBrowser x:Name="Webr" Visibility="Collapsed"/>
+            <WebBrowser x:Name="Webr"/>
         </Border>
 
 
-        <!--<local:Dictionary x:Name="Dic" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5"  />-->
+        <!--<local:Dictionary x:Name="Dic"  Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" />-->
 
+        
         <Label Name="TitleBar" 
                Background="#00A0E9" 
                MouseDown="TitleBar_OnMouseDown" 
@@ -95,6 +96,9 @@
                  FontSize="20"
                  BorderBrush="Transparent"
                  BorderThickness="0"
+                 Foreground="#696969"
+                 Text="请输入词组"
+                 GotFocus="SearchBox_OnGotFocus"
                  VerticalContentAlignment="Center" 
                  Grid.Row="0" 
                  Grid.Column="3" 
@@ -152,11 +156,13 @@
 
         <Button Name="DicBtn"  
                 Width="140" 
+                Height="22"
                 Style="{StaticResource DicBtnStyle}" 
                 Click="DicBtn_OnClick"
                 Grid.Row="1" 
                 Grid.Column="0" 
-                Margin="0,30,0,0" Height="22" VerticalAlignment="Top"  />
+                Margin="0,30,0,0" 
+                VerticalAlignment="Top"  />
 
         <Button Name="TraBtn" 
                 Width="140"
@@ -165,7 +171,8 @@
                 Click="TraBtn_OnClick"
                 Grid.Row="1" 
                 Grid.Column="0"
-                Margin="0,82,0,0" VerticalAlignment="Top"  />
+                Margin="0,82,0,0"
+                VerticalAlignment="Top"  />
 
 
         <!--<Label Background="#F5F5F5" Margin="0,60,760,0"/>
