@@ -38,13 +38,13 @@ namespace KoalaDictDemo
 
         private void DicBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            //Dic.Visibility = Visibility.Visible;
+            BdBrowser.Visibility = Visibility.Visible;
             Tra.Visibility = Visibility.Hidden;
         }
 
         private void TraBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            //Dic.Visibility = Visibility.Hidden;
+            BdBrowser.Visibility = Visibility.Hidden;
             Tra.Visibility = Visibility.Visible;
         }
 
@@ -88,5 +88,8 @@ namespace KoalaDictDemo
 
             }
         }
+
+
+
     }
 }

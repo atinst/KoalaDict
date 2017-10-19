@@ -40,11 +40,11 @@
             </ico:TaskbarIcon.TrayPopup>
         </ico:TaskbarIcon>
 
-        
-        <local:Translate x:Name="Tra" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5"  />
 
-        <Border x:Name="BdBrowser" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5">
-            <WebBrowser/>
+        <local:Translate x:Name="Tra" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" Visibility="Hidden" />
+
+        <Border x:Name="BdBrowser" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" >
+            <WebBrowser x:Name="Webr" Visibility="Collapsed"/>
         </Border>
 
 
@@ -135,7 +135,7 @@
                 Style="{StaticResource MaxBtnStyle}"
                 Grid.Row="0"
                 Grid.Column="5"  />
-        
+
         <Button Name="BacBtn"
                 Width="25"
                 Height="25"
@@ -149,10 +149,27 @@
         <Label Background="#F5F5F5"
                Grid.Row="1" 
                Grid.Column="0"  />
-        <!--<Button Name="MaxBtn" Margin="820,0,40,575" Click="MaxBtn_OnClick" Style="{StaticResource MaxBtnStyle}"/>
-        <Button Name="CloBtn" Margin="860,0,0,575" Click="CloBtn_OnClick" Style="{StaticResource CloBtnStyle}"/>-->
+
+        <Button Name="DicBtn"  
+                Width="140" 
+                Style="{StaticResource DicBtnStyle}" 
+                Click="DicBtn_OnClick"
+                Grid.Row="1" 
+                Grid.Column="0" 
+                Margin="0,30,0,0" Height="22" VerticalAlignment="Top"  />
+
+        <Button Name="TraBtn" 
+                Width="140"
+                Height="22"
+                Style="{StaticResource TraBtnStyle}"
+                Click="TraBtn_OnClick"
+                Grid.Row="1" 
+                Grid.Column="0"
+                Margin="0,82,0,0" VerticalAlignment="Top"  />
+
 
         <!--<Label Background="#F5F5F5" Margin="0,60,760,0"/>
+        <Button Name="TraBtn" Margin="5,145,765,430" Click="TraBtn_OnClick" Cursor="Hand" Style="{StaticResource TraBtnStyle}"/>
         <Image Source="Image/KoalaLogo.png" MouseDown="TitleBar_OnMouseDown" Margin="15,5,835,545"/>
         <Label Content="考拉翻译俄语词典" MouseDown="TitleBar_OnMouseDown" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="White" FontSize="22" Margin="70,10,640,550"/>
 
@@ -162,10 +179,10 @@
 
         <Button Name="MinBtn" Margin="780,0,80,575" Click="MinBtn_OnClick" Style="{StaticResource MinBtnStyle}"/>
         <Button Name="MaxBtn" Margin="820,0,40,575" Click="MaxBtn_OnClick" Style="{StaticResource MaxBtnStyle}"/>
-        <Button Name="CloBtn" Margin="860,0,0,575" Click="CloBtn_OnClick" Style="{StaticResource CloBtnStyle}"/>-->
+        <Button Name="CloBtn" Margin="860,0,0,575" Click="CloBtn_OnClick" Style="{StaticResource CloBtnStyle}"/>
 
-        <!--<请勿删除Label Content="单词本" FontSize="20" Foreground="#696969"  Margin="51,286,772,279"/请勿删除>-->
-        <!--<Button Name="DicBtn" Margin="5,90,765,485" Click="DicBtn_OnClick" Cursor="Hand" Style="{StaticResource DicBtnStyle}"/>
+        <请勿删除Label Content="单词本" FontSize="20" Foreground="#696969"  Margin="51,286,772,279"/请勿删除>
+        <Button Name="DicBtn" Margin="5,90,765,485" Click="DicBtn_OnClick" Cursor="Hand" Style="{StaticResource DicBtnStyle}"/>
         <Button Name="TraBtn" Margin="5,145,765,430" Click="TraBtn_OnClick" Cursor="Hand" Style="{StaticResource TraBtnStyle}"/>-->
 
 
