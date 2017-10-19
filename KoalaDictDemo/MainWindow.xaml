@@ -43,9 +43,12 @@
 
         <local:Translate x:Name="Tra" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" Visibility="Hidden" />
 
-        <Border x:Name="BdBrowser" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" >
-            <WebBrowser x:Name="Webr"/>
-        </Border>
+        <Grid Name="WbGrid" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" Visibility="Collapsed" >
+            <Border x:Name="BdBrowser" >
+                <WebBrowser x:Name="Webr"/>
+            </Border>
+        </Grid>
+        
 
 
         <!--<local:Dictionary x:Name="Dic"  Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" />-->
@@ -93,11 +96,11 @@
 
         <TextBox Name="SearchBox" 
                  Margin="0,11,19,11"
-                 FontSize="20"
+                 FontSize="19"
                  BorderBrush="Transparent"
                  BorderThickness="0"
-                 Foreground="#696969"
-                 Text="请输入词组"
+                 Foreground="#D3D3D3"
+                 Text="请输入要查询的单词或词组"
                  GotFocus="SearchBox_OnGotFocus"
                  VerticalContentAlignment="Center" 
                  Grid.Row="0" 

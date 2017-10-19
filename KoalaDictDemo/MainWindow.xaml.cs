@@ -92,7 +92,9 @@ namespace KoalaDictDemo
 
         private void SearchBox_OnGotFocus(object sender, RoutedEventArgs e)
         {
-            //SearchBox.Foreground = "#696969";
+            var brush = new SolidColorBrush(Colors.Black);
+            SearchBox.Foreground = brush;
+            SearchBox.Text = "";
         }
     }
 }
