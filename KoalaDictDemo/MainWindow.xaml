@@ -43,11 +43,13 @@
 
         <local:Translate x:Name="Tra" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" Visibility="Hidden" />
 
-        <Grid Name="WbGrid" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" Visibility="Collapsed" >
-            <Border x:Name="BdBrowser" >
-                <WebBrowser x:Name="Webr"/>
-            </Border>
-        </Grid>
+
+        <Border x:Name="BdBrowser" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5"  >
+            <WebBrowser/>
+        </Border>
+        <!--<Grid Name="WbGrid" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" Background="Transparent" Width="0">
+            
+        </Grid>-->
         
 
 

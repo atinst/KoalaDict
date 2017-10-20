@@ -38,13 +38,15 @@ namespace KoalaDictDemo
 
         private void DicBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            //BdBrowser.Visibility = Visibility.Visible;
+            BdBrowser.Height = double.NaN;
+            BdBrowser.Width = double.NaN;
             Tra.Visibility = Visibility.Hidden;
         }
 
         private void TraBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            //BdBrowser.Visibility = Visibility.Hidden;
+            BdBrowser.Height = 0;
+            BdBrowser.Width = 0;
             Tra.Visibility = Visibility.Visible;
         }
 
@@ -95,6 +97,7 @@ namespace KoalaDictDemo
             var brush = new SolidColorBrush(Colors.Black);
             SearchBox.Foreground = brush;
             SearchBox.Text = "";
+
         }
     }
 }
