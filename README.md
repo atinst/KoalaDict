@@ -1,7 +1,8 @@
 KoalaDictDemo
 ====
 
-###已完成
+**已完成**
+====
 
 **2017年10月10日**
 - 整体布局加配色
@@ -36,7 +37,8 @@ KoalaDictDemo
 **2017年10月20日**
 - 代码重构完成
 
-###遇到的问题
+**遇到的问题**
+====
 
 **2017年10月10日**
 - (2017年10月18日已解决)~~当AllowsTransparency="True"时，WebBroeser会无法显示，当AllowsTransparency="False"时，主界面阴影效果会丢失~~
