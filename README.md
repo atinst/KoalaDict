@@ -1,6 +1,8 @@
 KoalaDictDemo
 ====
 
+这只是一个记录进度以及问题的Readme
+
 **已完成**
 ====
 
@@ -49,4 +51,3 @@ KoalaDictDemo
 **2017年10月19日**
 - 如何让Button被点击后外观保持在一种状态
 
-<font size=10>我是变大的字</font>
