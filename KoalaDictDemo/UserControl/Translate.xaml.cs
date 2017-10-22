@@ -5,6 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using Newtonsoft.Json;
 
 namespace KoalaDictDemo
@@ -44,11 +45,15 @@ namespace KoalaDictDemo
             var reType = JsonConvert.DeserializeAnonymousType(results, type);
             var temp = reType.translation[0];
             OutBox.Text = temp;
+            var brush = new SolidColorBrush(Colors.Black);
+            OutBox.Foreground = brush;
 
         }
 
         private void InBox_OnGotFocus(object sender, RoutedEventArgs e)
         {
+            var brush = new SolidColorBrush(Colors.Black);
+            InBox.Foreground = brush;
             InBox.Text = "";
         }
     }

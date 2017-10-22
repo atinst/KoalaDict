@@ -6,10 +6,33 @@
              xmlns:local="clr-namespace:KoalaDictDemo"
              mc:Ignorable="d" 
              d:DesignHeight="540" d:DesignWidth="760">
+    
     <Grid Background="#F0F0F0">
-        <TextBox Name="InBox" Text="请输入要翻译的俄文" FontSize="18" GotFocus="InBox_OnGotFocus" BorderBrush="#00A0E9" Margin="30,30,30,330"/>
-        <TextBox Name="OutBox" Text="译文自动显示在这里" FontSize="18" BorderBrush="#00A0E9" IsReadOnly="True" Margin="30,330,30,30"/>
-        <Button Name="TransBtn" Content="翻译" FontSize="18" Click="TransBtn_OnClick" Margin="560,255,100,255"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="245*"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="245*"/>
+        </Grid.RowDefinitions>
+        
+        <TextBox Name="InBox" Text="请输入要翻译的俄文"
+                 FontSize="16" 
+                 BorderBrush="#00A0E9"
+                 Foreground="Gray"
+                 GotFocus="InBox_OnGotFocus"
+                 Margin="30,30,30,15"
+                 Grid.Row="0"  />
+        
+        <TextBox Name="OutBox" 
+                 Text="译文自动显示在这里" 
+                 FontSize="16"
+                 BorderBrush="#00A0E9"
+                 Foreground="Gray"
+                 IsReadOnly="True" 
+                 Margin="30,15,30,30"
+                 Grid.Row="2"  />
+        
+        <Button Name="TransBtn" Content="自动翻译" Width="100" Height="30" FontSize="16" Click="TransBtn_OnClick" Grid.Row="1"/>
+        <Button Name="DelBtn" Visibility="Hidden" Grid.Row="0"></Button>
 
     </Grid>
 </UserControl>

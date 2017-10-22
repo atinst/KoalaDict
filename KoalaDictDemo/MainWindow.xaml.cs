@@ -99,5 +99,13 @@ namespace KoalaDictDemo
             SearchBox.Text = "";
 
         }
+
+        private void SearchBox_OnLostFocus(object sender, RoutedEventArgs e)
+        {
+            var brush = new SolidColorBrush(Colors.Gray);
+            if (SearchBox.Text != "") return;
+            SearchBox.Foreground = brush;
+            SearchBox.Text = "请输入要查询的单词或词组";
+        }
     }
 }
