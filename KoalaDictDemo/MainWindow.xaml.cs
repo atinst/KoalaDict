@@ -95,9 +95,9 @@ namespace KoalaDictDemo
         private void SearchBox_OnGotFocus(object sender, RoutedEventArgs e)
         {
             var brush = new SolidColorBrush(Colors.Black);
+            if (SearchBox.Text != "请输入要查询的单词或词组") return;
             SearchBox.Foreground = brush;
             SearchBox.Text = "";
-
         }
 
         private void SearchBox_OnLostFocus(object sender, RoutedEventArgs e)

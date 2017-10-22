@@ -14,11 +14,13 @@
             <RowDefinition Height="245*"/>
         </Grid.RowDefinitions>
         
-        <TextBox Name="InBox" Text="请输入要翻译的俄文"
+        <TextBox Name="InBox" 
+                 Text="请输入要翻译的俄文"
                  FontSize="16" 
                  BorderBrush="#00A0E9"
                  Foreground="Gray"
                  GotFocus="InBox_OnGotFocus"
+                 LostFocus="InBox_OnLostFocus"
                  Margin="30,30,30,15"
                  Grid.Row="0"  />
         

@@ -47,14 +47,24 @@ namespace KoalaDictDemo
             OutBox.Text = temp;
             var brush = new SolidColorBrush(Colors.Black);
             OutBox.Foreground = brush;
+            
 
         }
 
         private void InBox_OnGotFocus(object sender, RoutedEventArgs e)
         {
             var brush = new SolidColorBrush(Colors.Black);
+            if (InBox.Text != "请输入要翻译的俄文") return;
             InBox.Foreground = brush;
             InBox.Text = "";
+        }
+
+        private void InBox_OnLostFocus(object sender, RoutedEventArgs e)
+        {
+            var brush = new SolidColorBrush(Colors.Gray);
+            if (InBox.Text != "") return;
+            InBox.Foreground = brush;
+            InBox.Text = "请输入要翻译的俄文";
         }
     }
 }
