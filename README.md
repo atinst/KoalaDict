@@ -39,6 +39,10 @@ KoalaDictDemo
 **2017年10月20日**
 - 代码重构完成
 
+**2017年10月22日**
+- 优化 Translate 用户控件前台代码
+- 优化 SearchBox InBox OutBox 控件事件代码
+
 **遇到的问题**
 ====
 
