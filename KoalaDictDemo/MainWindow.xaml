@@ -9,6 +9,9 @@
         Title="MainWindow" 
         Height="620" 
         Width="920" 
+        
+        
+        
         WindowStyle="None" 
         AllowsTransparency="True" 
         BorderThickness="10" 
@@ -111,14 +114,13 @@
 
         <Button Name="LoginBtn"
                 Style="{StaticResource LoginBtnStyle}"
-                Width="33"
                 Height="33"
+                Width="35"
                 Grid.Row="0" 
                 Grid.Column="5"  
                 Opacity="0.8"
-                Click="LoginBtn_OnClick"
-                Margin="25,14,217,13" 
-                  />
+                Click="LoginBtn_OnClick" 
+                Margin="20,14,220,13"  />
 
         <Button Name="MinBtn"
                 Width="25"
@@ -182,6 +184,6 @@
                 VerticalAlignment="Top"  />
 
         <!--请勿删除<Label Content="单词本" FontSize="20" Foreground="#696969"  Margin="51,286,772,279"/>请勿删除-->
-      
+
     </Grid>
 </Window>

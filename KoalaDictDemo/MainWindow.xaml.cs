@@ -28,7 +28,7 @@ namespace KoalaDictDemo
             var borderBrowser = new WebBrowserOverlay(BdBrowser);
             var dicWeb = borderBrowser.WebBrowser;
             dicWeb.Navigate("http://html5test.com/");
-
+            
         }
 
         private void TitleBar_OnMouseDown(object sender, MouseButtonEventArgs e)
