@@ -63,10 +63,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="UserControl\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\WebBrowserOverlay.xaml.cs">
       <DependentUpon>WebBrowserOverlay.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Win32.cs" />
+    <Page Include="UserControl\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Style\TrayBtnStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
