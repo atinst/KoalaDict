@@ -107,5 +107,11 @@ namespace KoalaDictDemo
             SearchBox.Foreground = brush;
             SearchBox.Text = "请输入要查询的单词或词组";
         }
+
+        private void LoginBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            var login = new Login();
+            login.Show();
+        }
     }
 }

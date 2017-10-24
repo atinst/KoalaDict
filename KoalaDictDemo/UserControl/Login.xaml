@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KoalaDictDemo"
         mc:Ignorable="d"
-        Title="Login" Height="300" Width="300">
+        Title="Login" 
+        WindowStyle="None" 
+        AllowsTransparency="True" 
+        BorderThickness="10" 
+        Topmost="True" 
+        ResizeMode="NoResize" 
+        WindowStartupLocation="CenterScreen"
+        Height="450" 
+        Width="350">
+    
+    <Window.Effect>
+        <DropShadowEffect BlurRadius="15" Color="Black" ShadowDepth="0"/>
+    </Window.Effect>
+    
     <Grid>
+        
         
     </Grid>
 </Window>

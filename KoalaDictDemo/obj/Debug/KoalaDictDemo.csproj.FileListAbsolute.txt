@@ -87,3 +87,5 @@ F:\Git\KoalaDictDemo\KoalaDictDemo\obj\Debug\KoalaDictDemo.g.resources
 F:\Git\KoalaDictDemo\KoalaDictDemo\obj\Debug\KoalaDictDemo.Properties.Resources.resources
 F:\Git\KoalaDictDemo\KoalaDictDemo\obj\Debug\KoalaDictDemo.csproj.GenerateResource.Cache
 F:\Git\KoalaDictDemo\KoalaDictDemo\obj\Debug\KoalaDictDemo.csproj.CoreCompileInputs.cache
+F:\Git\KoalaDictDemo\KoalaDictDemo\obj\Debug\UserControl\Login.g.cs
+F:\Git\KoalaDictDemo\KoalaDictDemo\obj\Debug\UserControl\Login.baml
