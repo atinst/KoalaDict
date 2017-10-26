@@ -11,7 +11,7 @@
         BorderThickness="10" 
         Topmost="True" 
         ResizeMode="NoResize" 
-        
+        WindowStartupLocation="CenterScreen"
         
         Height="450" 
         Width="350">
