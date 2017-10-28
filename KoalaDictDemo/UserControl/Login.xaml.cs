@@ -29,7 +29,7 @@ namespace KoalaDictDemo
         {
 
             const string conParameter =
-                "Server = 114.67.141.164 ; User Id = root ; Password = 008350Zyx ; DataBase = login_account";
+                "Server = 114.67.141.164; User Id = root; Password = qaz123@; Port = 443; DataBase = login_account;";
 
             var conData = new MySqlConnection(conParameter);
             conData.Open();
