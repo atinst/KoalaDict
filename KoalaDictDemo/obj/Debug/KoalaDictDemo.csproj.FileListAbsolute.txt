@@ -89,12 +89,5 @@ F:\Git\KoalaDictDemo\KoalaDictDemo\obj\Debug\KoalaDictDemo.csproj.GenerateResour
 F:\Git\KoalaDictDemo\KoalaDictDemo\obj\Debug\KoalaDictDemo.csproj.CoreCompileInputs.cache
 F:\Git\KoalaDictDemo\KoalaDictDemo\obj\Debug\UserControl\Login.g.cs
 F:\Git\KoalaDictDemo\KoalaDictDemo\obj\Debug\UserControl\Login.baml
-F:\Git\KoalaDictDemo\KoalaDictDemo\bin\Debug\EntityFramework.dll
-F:\Git\KoalaDictDemo\KoalaDictDemo\bin\Debug\EntityFramework.SqlServer.dll
-F:\Git\KoalaDictDemo\KoalaDictDemo\bin\Debug\System.Data.SQLite.dll
-F:\Git\KoalaDictDemo\KoalaDictDemo\bin\Debug\System.Data.SQLite.EF6.dll
-F:\Git\KoalaDictDemo\KoalaDictDemo\bin\Debug\System.Data.SQLite.Linq.dll
-F:\Git\KoalaDictDemo\KoalaDictDemo\bin\Debug\EntityFramework.xml
-F:\Git\KoalaDictDemo\KoalaDictDemo\bin\Debug\EntityFramework.SqlServer.xml
-F:\Git\KoalaDictDemo\KoalaDictDemo\bin\Debug\System.Data.SQLite.xml
-F:\Git\KoalaDictDemo\KoalaDictDemo\bin\Debug\System.Data.SQLite.dll.config
+F:\Git\KoalaDictDemo\KoalaDictDemo\bin\Debug\MySql.Data.dll
+F:\Git\KoalaDictDemo\KoalaDictDemo\bin\Debug\MySql.Data.xml

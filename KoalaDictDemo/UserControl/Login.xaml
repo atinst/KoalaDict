@@ -21,6 +21,7 @@
     </Window.Effect>
     
     <Grid>
+        <Button Name="LoginBtn" Width="100" Height="100" Click="LoginBtn_OnClick"></Button>
         
         
     </Grid>

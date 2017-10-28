@@ -27,7 +27,7 @@ namespace KoalaDictDemo
             InitializeComponent();
             var borderBrowser = new WebBrowserOverlay(BdBrowser);
             var dicWeb = borderBrowser.WebBrowser;
-            dicWeb.Navigate("http://html5test.com/");
+            dicWeb.Navigate("http://www.52yee.com/");
            
         }
 
