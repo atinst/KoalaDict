@@ -4,7 +4,6 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KoalaDictDemo"
-        xmlns:input="clr-namespace:System.Windows.Input;assembly=PresentationCore"
         mc:Ignorable="d"
         Title="Login"
         Width="310"
@@ -43,7 +42,8 @@
         <Image Width="64" 
                Height="64" 
                Grid.Row="1" 
-               Source="../Image/KoalaLogo.png" Margin="113,10,113,281" />
+               Source="../Image/KoalaLogo.png" 
+               Margin="113,10,113,281"  />
 
         <Label Content="考拉翻译"
                Width="100"
@@ -52,15 +52,17 @@
                VerticalContentAlignment="Center"
                HorizontalContentAlignment="Center" 
                FontSize="20" 
-               Margin="95,75,95,240"   />
+               Margin="95,75,95,240"  />
 
         <PasswordBox Name="PassBox"
-                 Grid.Row="1"
-                 Width="180"
-                 Height="27"
-                 FontSize="15"
-                 VerticalContentAlignment="Center"
-                 Margin="55,195,55,133"  />
+                     Grid.Row="1"
+                     Width="180"
+                     Height="27"
+                     FontSize="15"
+                     VerticalContentAlignment="Center"
+                     Margin="55,195,55,133"  />
+                
+        
 
         <Button Name="LoginBtn"
                 Grid.Row="1" 
@@ -78,13 +80,7 @@
                  FontSize="15"
                  InputMethod.IsInputMethodEnabled="False"
                  VerticalContentAlignment="Center"
-                 Margin="55,145,55,183" >
-            <TextBox.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="13"/>
-                </Style>
-            </TextBox.Resources>
-        </TextBox>
+                 Margin="55,145,55,183"  />
 
 
 
