@@ -11,6 +11,8 @@
                 <ResourceDictionary Source="Style/MainBtnStyle.xaml"></ResourceDictionary>
               
                 <ResourceDictionary Source="Style/TrayBtnStyle.xaml"></ResourceDictionary>
+                
+             
 
             </ResourceDictionary.MergedDictionaries>
 

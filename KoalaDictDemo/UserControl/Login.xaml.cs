@@ -34,8 +34,8 @@ namespace KoalaDictDemo
             var conData = new MySqlConnection(conParameter);
             conData.Open();
 
-            const string dbSql =
-                "select * from account where user='admin' and password='admin'";
+            var dbSql =
+                $@"select * from account where user='{UserBox.Text}' and password='{PassBox.Password}'";
 
             var cmd = new MySqlCommand(dbSql, conData);
             var obj = cmd.ExecuteScalar();
@@ -50,6 +50,16 @@ namespace KoalaDictDemo
             {
                 MessageBox.Show("用户名或密码错误");
             }
+        }
+
+        private void TitleBar_OnMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
+
+        private void CloBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }

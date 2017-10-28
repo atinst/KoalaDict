@@ -4,25 +4,89 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KoalaDictDemo"
+        xmlns:input="clr-namespace:System.Windows.Input;assembly=PresentationCore"
         mc:Ignorable="d"
-        Title="Login" 
+        Title="Login"
+        Width="310"
+        Height="410" 
         WindowStyle="None" 
         AllowsTransparency="True" 
-        BorderThickness="10" 
+        BorderThickness="10"
         Topmost="True" 
         ResizeMode="NoResize" 
-        WindowStartupLocation="CenterScreen"
-        
-        Height="450" 
-        Width="350">
-    
+        WindowStartupLocation="CenterScreen">
+
     <Window.Effect>
         <DropShadowEffect BlurRadius="15" Color="Black" ShadowDepth="0"/>
     </Window.Effect>
-    
-    <Grid>
-        <Button Name="LoginBtn" Width="100" Height="100" Click="LoginBtn_OnClick"></Button>
+
+    <Grid Background="#F5F5F5">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="355"/>
+        </Grid.RowDefinitions>
+
+        <Label Name="TitleBar"
+               Background="#00A0E9"
+               Grid.Row="0"
+               MouseDown="TitleBar_OnMouseDown"  />
+
+        <Button Name="CloBtn" 
+                Width="25"
+                Height="25"
+                Click="CloBtn_OnClick"
+                Style="{StaticResource CloBtnStyle}" 
+                Grid.Row="0" 
+                Margin="260,5,5,5"  />
+
+        <Image Width="64" 
+               Height="64" 
+               Grid.Row="1" 
+               Source="../Image/KoalaLogo.png" Margin="113,10,113,281" />
+
+        <Label Content="考拉翻译"
+               Width="100"
+               Height="40"
+               Grid.Row="1"
+               VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Center" 
+               FontSize="20" 
+               Margin="95,75,95,240"   />
+
+        <PasswordBox Name="PassBox"
+                 Grid.Row="1"
+                 Width="180"
+                 Height="27"
+                 FontSize="15"
+                 VerticalContentAlignment="Center"
+                 Margin="55,195,55,133"  />
+
+        <Button Name="LoginBtn"
+                Grid.Row="1" 
+                Content="登陆"
+                Width="60" 
+                Height="27" 
+                FontSize="15"
+                Click="LoginBtn_OnClick" 
+                Margin="115,245,115,83"  />
         
-        
+        <TextBox x:Name="UserBox" 
+                 Grid.Row="1"
+                 Width="180"
+                 Height="27"
+                 FontSize="15"
+                 InputMethod.IsInputMethodEnabled="False"
+                 VerticalContentAlignment="Center"
+                 Margin="55,145,55,183" >
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="13"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+
+
+
     </Grid>
 </Window>
