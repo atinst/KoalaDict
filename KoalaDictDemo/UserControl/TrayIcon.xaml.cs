@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static KoalaDictDemo.MainWindow;
 
 namespace KoalaDictDemo
 {
@@ -23,6 +24,19 @@ namespace KoalaDictDemo
         public TrayIcon()
         {
             InitializeComponent();
+        }
+
+        private void ShowBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            var manwindow = new MainWindow();
+            manwindow.Show();
+        }
+
+
+        private void CloseBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            var manwindow = new MainWindow();
+            manwindow.Close();
         }
     }
 }
