@@ -28,15 +28,15 @@ namespace KoalaDictDemo
 
         private void ShowBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            var manwindow = new MainWindow();
-            manwindow.Show();
+            //var manwindow = new MainWindow();
+            //manwindow.Show();
         }
 
 
         private void CloseBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            var manwindow = new MainWindow();
-            manwindow.Close();
+            //var manwindow = new MainWindow();
+            //Window.GetWindow(manwindow)?.Close();
         }
     }
 }
