@@ -59,6 +59,7 @@
                      Width="180"
                      Height="27"
                      FontSize="15"
+                     KeyDown="PassBox_OnKeyDown"
                      VerticalContentAlignment="Center"
                      Margin="55,195,55,133"  />
                 
