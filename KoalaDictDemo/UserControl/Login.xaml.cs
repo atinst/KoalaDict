@@ -39,6 +39,7 @@ namespace KoalaDictDemo
 
             var cmd = new MySqlCommand(dbSql, conData);
             var obj = cmd.ExecuteScalar();
+
             if (obj != null)
             {
                 MessageBox.Show("欢迎使用考拉翻译俄语词典");

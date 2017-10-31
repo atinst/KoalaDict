@@ -38,13 +38,7 @@
                 Style="{StaticResource CloBtnStyle}" 
                 Grid.Row="0" 
                 Margin="260,5,5,5"  />
-
-        <Image Width="64" 
-               Height="64" 
-               Grid.Row="1" 
-               Source="../Image/KoalaLogo.png" 
-               Margin="113,10,113,281"  />
-
+        
         <Label Content="考拉翻译"
                Width="100"
                Height="40"
@@ -53,6 +47,21 @@
                HorizontalContentAlignment="Center" 
                FontSize="20" 
                Margin="95,75,95,240"  />
+
+        <Image Width="64" 
+               Height="64" 
+               Grid.Row="1" 
+               Source="../Image/KoalaLogo.png" 
+               Margin="113,10,113,281"  />
+
+        <TextBox x:Name="UserBox" 
+                 Grid.Row="1"
+                 Width="180"
+                 Height="27"
+                 FontSize="15"
+                 InputMethod.IsInputMethodEnabled="False"
+                 VerticalContentAlignment="Center"
+                 Margin="55,145,55,183"  />
 
         <PasswordBox Name="PassBox"
                      Grid.Row="1"
@@ -63,8 +72,6 @@
                      VerticalContentAlignment="Center"
                      Margin="55,195,55,133"  />
                 
-        
-
         <Button Name="LoginBtn"
                 Grid.Row="1" 
                 Content="登陆"
@@ -74,16 +81,6 @@
                 Click="LoginBtn_OnClick" 
                 Margin="115,245,115,83"  />
         
-        <TextBox x:Name="UserBox" 
-                 Grid.Row="1"
-                 Width="180"
-                 Height="27"
-                 FontSize="15"
-                 InputMethod.IsInputMethodEnabled="False"
-                 VerticalContentAlignment="Center"
-                 Margin="55,145,55,183"  />
-
-
-
+        
     </Grid>
 </Window>

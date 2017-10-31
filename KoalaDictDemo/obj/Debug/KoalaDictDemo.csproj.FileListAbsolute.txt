@@ -91,3 +91,4 @@ F:\Git\KoalaDictDemo\KoalaDictDemo\obj\Debug\UserControl\Login.g.cs
 F:\Git\KoalaDictDemo\KoalaDictDemo\obj\Debug\UserControl\Login.baml
 F:\Git\KoalaDictDemo\KoalaDictDemo\bin\Debug\MySql.Data.dll
 F:\Git\KoalaDictDemo\KoalaDictDemo\bin\Debug\MySql.Data.xml
+F:\Git\KoalaDictDemo\KoalaDictDemo\obj\Debug\KoalaDictDemo.csprojResolveAssemblyReference.cache
