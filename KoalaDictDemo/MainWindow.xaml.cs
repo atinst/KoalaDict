@@ -113,5 +113,16 @@ namespace KoalaDictDemo
             var login = new Login();
             login.Show();
         }
+
+        private void SearBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            BdBrowser.Height = 0;
+            BdBrowser.Width = 0;
+            var borderBrowser = new WebBrowserOverlay(BdBrowser);
+            var dicWeb = borderBrowser.WebBrowser;
+            dicWeb.Navigate("https://www.baidu.com/");
+            BdBrowser.Height = double.NaN;
+            BdBrowser.Width = double.NaN;
+        }
     }
 }
