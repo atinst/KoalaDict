@@ -1,17 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
+using Koala.Data.DataFromDB;
+using MongoDB.Driver;
+using MongoDB.Bson;
+
+
 //using WebBrowser = System.Windows.Forms.WebBrowser;
 
 namespace KoalaDictDemo
@@ -21,6 +27,7 @@ namespace KoalaDictDemo
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         private Rect _normal;
         public MainWindow()
         {
@@ -116,13 +123,25 @@ namespace KoalaDictDemo
 
         private void SearBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            BdBrowser.Height = 0;
-            BdBrowser.Width = 0;
-            var borderBrowser = new WebBrowserOverlay(BdBrowser);
-            var dicWeb = borderBrowser.WebBrowser;
-            dicWeb.Navigate("https://www.baidu.com/");
-            BdBrowser.Height = double.NaN;
-            BdBrowser.Width = double.NaN;
+            //BdBrowser.Height = 0;
+            //BdBrowser.Width = 0;
+            //var borderBrowser = new WebBrowserOverlay(BdBrowser);
+            //var dicWeb = borderBrowser.WebBrowser;
+            //dicWeb.Navigate("https://www.baidu.com/");
+            //BdBrowser.Height = double.NaN;
+            //BdBrowser.Width = double.NaN;
+            MongoDb mongoDb = new MongoDb();
+            string url = "mongodb://114.67.141.164:27017";
+            string databaseName = "demo";
+            string collectionName = "dict_spider_igimu_rc";
+            string dataEntity = "SpiderDoc";
+            mongoDb.ConnectDb(url, databaseName, collectionName, dataEntity);
+
         }
+
+        
+
+
+
     }
 }
