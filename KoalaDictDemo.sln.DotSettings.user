@@ -4,4 +4,6 @@
   &lt;Assembly Path="C:\Users\atinst\Desktop\Koala.Data.DataFromDB.dll" /&gt;&#xD;
   &lt;Assembly Path="C:\Users\atinst\Desktop\DLL\MongoDB.Bson.dll" /&gt;&#xD;
   &lt;Assembly Path="C:\Users\atinst\Desktop\DLL\MongoDB.Driver.dll" /&gt;&#xD;
+  &lt;Assembly Path="F:\Git\KoalaDictDemo\KoalaDictDemo\bin\Debug\Koala.Data.DataFromDB.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Users\atinst\Desktop\DLL\Koala.Data.DataFromDB.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>

@@ -130,13 +130,14 @@ namespace KoalaDictDemo
             //dicWeb.Navigate("https://www.baidu.com/");
             //BdBrowser.Height = double.NaN;
             //BdBrowser.Width = double.NaN;
-            MongoDb mongoDb = new MongoDb();
-            string url = "mongodb://114.67.141.164:27017";
-            string databaseName = "demo";
-            string collectionName = "dict_spider_igimu_rc";
-            string dataEntity = "SpiderDoc";
+            var mongoDb = new MongoDb();
+            const string url = "mongodb://114.67.141.164:27017";
+            const string databaseName = "admin";
+            const string collectionName = "demo";
+            const string dataEntity = "SpiderDoc";
+            var word = SearchBox.Text;
             mongoDb.ConnectDb(url, databaseName, collectionName, dataEntity);
-
+            mongoDb.GetPendingPageSourceByWord(word);
         }
 
         
