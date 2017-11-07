@@ -29,7 +29,7 @@
         <Label Name="TitleBar"
                Background="#00A0E9"
                Grid.Row="0"
-               MouseDown="TitleBar_OnMouseDown"  />
+               MouseLeftButtonDown="TitleBar_OnMouseDown"  />
 
         <Button Name="CloBtn" 
                 Width="25"

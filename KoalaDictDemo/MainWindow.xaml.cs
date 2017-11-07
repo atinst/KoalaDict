@@ -14,9 +14,11 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
+using CefSharp;
 using Koala.Data.DataFromDB;
 using MongoDB.Driver;
 using MongoDB.Bson;
+using Rect = System.Windows.Rect;
 
 
 //using WebBrowser = System.Windows.Forms.WebBrowser;
@@ -33,12 +35,14 @@ namespace KoalaDictDemo
         public static CBtn CBtn;
 
         private Rect _normal;
+
         public MainWindow()
         {
             InitializeComponent();
             Dic.ChromiumWeb.Address = @"http://www.52yee.com/";
             CBtn = CloBtn_OnClick;
         }
+       
 
         private void TitleBar_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -144,12 +148,11 @@ namespace KoalaDictDemo
             Template tmp = new Template(htmlPath, targetHtmlPath, strFlag, strJson);
             tmp.RenderHtml();
             Dic.ChromiumWeb.Address = targetHtmlPath;
+           
         }
-
- 
         
-
-
-
+        
     }
+
+   
 }

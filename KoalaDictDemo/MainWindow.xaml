@@ -44,19 +44,15 @@
         <local:Translate x:Name="Tra" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" Visibility="Hidden" />
         <local:Dictionary x:Name="Dic" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" />
 
-        <!--<Border x:Name="BdBrowser" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5"  >
-            <WebBrowser/>
-        </Border>-->
-
         <Label Name="TitleBar" 
                Background="#00A0E9" 
-               MouseDown="TitleBar_OnMouseDown" 
+               MouseLeftButtonDown="TitleBar_OnMouseDown" 
                Grid.Row="0" 
                Grid.Column="0"
                Grid.ColumnSpan="6"  />
 
         <Image  Source="Image/KoalaLogo.png" 
-                MouseDown="TitleBar_OnMouseDown" 
+                MouseLeftButtonDown="TitleBar_OnMouseDown" 
                 Width="45"
                 Height="45" 
                 Margin="15,7.5,80,7.5"
@@ -64,7 +60,7 @@
                 Grid.Column="0"  />
 
         <Label Content="考拉翻译俄语词典"
-               MouseDown="TitleBar_OnMouseDown"
+               MouseLeftButtonDown="TitleBar_OnMouseDown"
                VerticalContentAlignment="Center"
                HorizontalContentAlignment="Center"
                Foreground="White"
