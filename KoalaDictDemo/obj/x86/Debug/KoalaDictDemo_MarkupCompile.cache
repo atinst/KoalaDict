@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-F:\Git\KoalaDictDemo\KoalaDictDemo\obj\x86\Debug\
+C:\Users\YDW\Desktop\KoalaDict\KoalaDictDemo\obj\x86\Debug\
 KoalaDictDemo
 none
 false
 DEBUG;TRACE
-F:\Git\KoalaDictDemo\KoalaDictDemo\App.xaml
+C:\Users\YDW\Desktop\KoalaDict\KoalaDictDemo\App.xaml
 7-1145400323
 
-9-25654814
-82365198583
+10-1375459048
+82-363860681
 UserControl\Dictionary.xaml;UserControl\Login.xaml;Style\TrayBtnStyle.xaml;UserControl\TrayIcon.xaml;UserControl\Translate.xaml;Style\MainBtnStyle.xaml;MainWindow.xaml;
 
 False

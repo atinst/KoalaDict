@@ -137,9 +137,13 @@ namespace KoalaDictDemo
             var word = SearchBox.Text;
             mongoDb.ConnectDb(url, databaseName, collectionName, dataEntity);
             mongoDb.GetPendingPageSourceByWord(word);
-            string a = mongoDb.GetPendingPageSourceByWord(word);
-            Console.WriteLine(a);
-            Dic.ChromiumWeb.Address = @"baidu.com";
+            string strJson = mongoDb.GetPendingPageSourceByWord(word);
+            string htmlPath = Environment.CurrentDirectory + "\\html\\Template.html";
+            string targetHtmlPath = Environment.CurrentDirectory + "\\html\\NewTemplate.html";
+            string strFlag = "{{ jsn }}";
+            Template tmp = new Template(htmlPath, targetHtmlPath, strFlag, strJson);
+            tmp.RenderHtml();
+            Dic.ChromiumWeb.Address = targetHtmlPath;
         }
 
  

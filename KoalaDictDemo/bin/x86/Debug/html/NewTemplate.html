@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery-1.7.2.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <table class="table">
+        <tr>
+            <td><p class="text-left" style="font-size: 32px" >{{ Word }}</p></td>
+        </tr>
+    </table>
+
+
+    <div class="panel-group" id="accordion2">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion2"
+                       href="#collapseOne2">
+                        <p style="font-size: 17px">基础释义</p>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne2" class="in" style="height: auto;">
+                <div class="panel-body">
+                    <p v-for="(k, v) in Eg">
+                        {{ BasicsExplain }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group" id="accordion1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion1"
+                       href="#collapsOne1">
+                        <p style="font-size: 17px">行业释义</p>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapsOne1" class="in" style="height: auto;">
+                <div class="panel-body">
+                    <p v-for="(k, v) in MajorExplain">
+                        {{ k }} :<br> {{ v }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse"
+                       href="#collapseOne">
+                        <p style="font-size: 17px">例句与短语</p>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="in" style="height: auto;">
+                <div class="panel-body">
+                    <p v-for="(k, v) in Eg">
+                        {{ $index+1 }}. {{ k }} : <br>{{ v }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {"Word":"И-оператор","BasicsExplain":null,"MajorExplain":{"汽车 ":"\"与\"操作<##>\"与\"操作","数学 ":"与算子<##>与算子"},"Eg":{" и -оператор":"\"与\"操作符; \"与\"操作符"," 与 操作符":"\"и\"-оператор; \"и\"-оператор"," полугласное и":"半元音的и; 半元音的и","мендел":"периодическая система элементов Д; периодическая система элементов Д","менделеева":"периодический закон Д; периодический закон Д"," парилен и":"Парилен и 聚对二甲苯; Парилен и 聚对二甲苯"," оператор и":"与算子; 与算符; 与算子; 与算符"," нипол и":"Нипол и 丁腈橡胶; Нипол и 丁腈橡胶"," многозольная и высокощелочная присадка":"многозольная и высокощёлочная присадка 高灰分高碱度添加剂; многозольная и высокощёлочная присадка 高灰分高碱度添加剂"," минх и гп":"МИНХ и ГП (Московский ордена трудового Красного Знамени институт нефтехимической и газовой промышленности имени академика и; МИНХ и ГП (Московский ордена трудового Красного Знамени институт нефтехимической и газовой промышленности имени академика и"," мерказин и":"Мерказин и 硫化促进剂; Мерказин и 硫化促进剂"," малестан б и бб":"Малестан Б и ББ 二马来二酸丁基锡抗氧化剂及光稳定剂; Малестан Б и ББ 二马来二酸丁基锡抗氧化剂及光稳定剂"}}
+    })
+</script>
+</body>
+</html>

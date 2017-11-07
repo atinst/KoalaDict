@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery-1.7.2.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <table class="table">
+        <tr>
+            <td><p class="text-left" style="font-size: 32px" >{{ Word }}</p></td>
+        </tr>
+    </table>
+
+
+    <div class="panel-group" id="accordion2">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion2"
+                       href="#collapseOne2">
+                        <p style="font-size: 17px">基础释义</p>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne2" class="in" style="height: auto;">
+                <div class="panel-body">
+                    <p v-for="(k, v) in Eg">
+                        {{ BasicsExplain }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group" id="accordion1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion1"
+                       href="#collapsOne1">
+                        <p style="font-size: 17px">行业释义</p>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapsOne1" class="in" style="height: auto;">
+                <div class="panel-body">
+                    <p v-for="(k, v) in MajorExplain">
+                        {{ k }} :<br> {{ v }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse"
+                       href="#collapseOne">
+                        <p style="font-size: 17px">例句与短语</p>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="in" style="height: auto;">
+                <div class="panel-body">
+                    <p v-for="(k, v) in Eg">
+                        {{ $index+1 }}. {{ k }} : <br>{{ v }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {{ jsn }}
+    })
+</script>
+</body>
+</html>

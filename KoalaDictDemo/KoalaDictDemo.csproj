@@ -117,6 +117,7 @@
     <Compile Include="UserControl\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Utils\Template.cs" />
     <Page Include="UserControl\Dictionary.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
