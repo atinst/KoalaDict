@@ -13,6 +13,7 @@
         AllowsTransparency="True" 
         BorderThickness="10" 
         Topmost="True" 
+        WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize">
 
     <Window.Effect>
@@ -41,10 +42,11 @@
         </ico:TaskbarIcon>
 
         <local:Translate x:Name="Tra" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" Visibility="Hidden" />
+        <local:Dictionary x:Name="Dic" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" />
 
-        <Border x:Name="BdBrowser" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5"  >
+        <!--<Border x:Name="BdBrowser" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5"  >
             <WebBrowser/>
-        </Border>
+        </Border>-->
 
         <Label Name="TitleBar" 
                Background="#00A0E9" 

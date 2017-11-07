@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,8 @@ using MongoDB.Bson;
 
 
 //using WebBrowser = System.Windows.Forms.WebBrowser;
+public delegate void CBtn(object sender, RoutedEventArgs e);
+
 
 namespace KoalaDictDemo
 {
@@ -27,15 +30,14 @@ namespace KoalaDictDemo
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+        public static CBtn CBtn;
+
         private Rect _normal;
         public MainWindow()
         {
             InitializeComponent();
-            var borderBrowser = new WebBrowserOverlay(BdBrowser);
-            var dicWeb = borderBrowser.WebBrowser;
-            dicWeb.Navigate("http://www.52yee.com/");
-           
+            Dic.ChromiumWeb.Address = @"http://www.52yee.com/";
+            CBtn = CloBtn_OnClick;
         }
 
         private void TitleBar_OnMouseDown(object sender, MouseButtonEventArgs e)
@@ -45,15 +47,15 @@ namespace KoalaDictDemo
 
         private void DicBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            BdBrowser.Height = double.NaN;
-            BdBrowser.Width = double.NaN;
+            
+            Dic.Visibility = Visibility.Visible;
             Tra.Visibility = Visibility.Hidden;
         }
 
         private void TraBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            BdBrowser.Height = 0;
-            BdBrowser.Width = 0;
+            
+            Dic.Visibility = Visibility.Hidden;
             Tra.Visibility = Visibility.Visible;
         }
 
@@ -62,9 +64,13 @@ namespace KoalaDictDemo
             WindowState = WindowState.Minimized;
         }
 
+        /// <summary>
+        /// 关闭主窗口事件
+        /// </summary>
         private void CloBtn_OnClick(object sender, RoutedEventArgs e)
         {
             Close();
+
         }
 
         private void MaxBtn_OnClick(object sender, RoutedEventArgs e)
@@ -123,13 +129,6 @@ namespace KoalaDictDemo
 
         private void SearBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            //BdBrowser.Height = 0;
-            //BdBrowser.Width = 0;
-            //var borderBrowser = new WebBrowserOverlay(BdBrowser);
-            //var dicWeb = borderBrowser.WebBrowser;
-            //dicWeb.Navigate("https://www.baidu.com/");
-            //BdBrowser.Height = double.NaN;
-            //BdBrowser.Width = double.NaN;
             var mongoDb = new MongoDb();
             const string url = "mongodb://114.67.141.164:27017";
             const string databaseName = "admin";
@@ -138,8 +137,12 @@ namespace KoalaDictDemo
             var word = SearchBox.Text;
             mongoDb.ConnectDb(url, databaseName, collectionName, dataEntity);
             mongoDb.GetPendingPageSourceByWord(word);
+            string a = mongoDb.GetPendingPageSourceByWord(word);
+            Console.WriteLine(a);
+            Dic.ChromiumWeb.Address = @"baidu.com";
         }
 
+ 
         
 
 

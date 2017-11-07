@@ -16,6 +16,7 @@ using static KoalaDictDemo.MainWindow;
 
 namespace KoalaDictDemo
 {
+
     /// <summary>
     /// TrayIcon.xaml 的交互逻辑
     /// </summary>
@@ -28,15 +29,18 @@ namespace KoalaDictDemo
 
         private void ShowBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            //var manwindow = new MainWindow();
-            //manwindow.Show();
+            
         }
 
 
+        /// <summary>
+        /// 托盘图标退出事件
+        /// </summary>
         private void CloseBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            //var manwindow = new MainWindow();
-            //Window.GetWindow(manwindow)?.Close();
+            CBtn(sender, e);
         }
     }
 }
+
+
