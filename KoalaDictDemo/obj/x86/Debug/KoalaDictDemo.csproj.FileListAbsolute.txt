@@ -47,3 +47,7 @@ F:\Git\KoalaDictDemo\KoalaDictDemo\obj\x86\Debug\KoalaDictDemo.csproj.GenerateRe
 F:\Git\KoalaDictDemo\KoalaDictDemo\obj\x86\Debug\KoalaDictDemo.csproj.CoreCompileInputs.cache
 F:\Git\KoalaDictDemo\KoalaDictDemo\obj\x86\Debug\KoalaDictDemo.exe
 F:\Git\KoalaDictDemo\KoalaDictDemo\obj\x86\Debug\KoalaDictDemo.pdb
+F:\Git\KoalaDictDemo\KoalaDictDemo\bin\x86\Debug\MongoDB.Driver.Core.dll
+F:\Git\KoalaDictDemo\KoalaDictDemo\bin\x86\Debug\MongoDB.Bson.xml
+F:\Git\KoalaDictDemo\KoalaDictDemo\bin\x86\Debug\MongoDB.Driver.xml
+F:\Git\KoalaDictDemo\KoalaDictDemo\bin\x86\Debug\MongoDB.Driver.Core.xml
