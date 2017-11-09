@@ -164,7 +164,7 @@
         <Button Name="DicBtn"  
                 Width="140" 
                 Height="22"
-                Style="{StaticResource DicBtnStyle}" 
+                Style="{StaticResource DicBtnStyleDown}" 
                 Click="DicBtn_OnClick"
                 Grid.Row="1" 
                 Grid.Column="0" 

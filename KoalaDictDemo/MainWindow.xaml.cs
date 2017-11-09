@@ -18,6 +18,7 @@ using CefSharp;
 using Koala.Data.DataFromDB;
 using MongoDB.Driver;
 using MongoDB.Bson;
+using MessageBox = System.Windows.MessageBox;
 using Rect = System.Windows.Rect;
 
 
@@ -39,8 +40,9 @@ namespace KoalaDictDemo
         public MainWindow()
         {
             InitializeComponent();
-            Dic.ChromiumWeb.Address = @"http://www.52yee.com/";
+            Dic.ChromiumWeb.Address = @"http://html6test.com/";
             CBtn = CloBtn_OnClick;
+
 
         }
        
@@ -55,6 +57,11 @@ namespace KoalaDictDemo
             
             Dic.Visibility = Visibility.Visible;
             Tra.Visibility = Visibility.Hidden;
+            if (Dic.Visibility != Visibility.Visible) return;
+            var traBtnStyle = (Style)FindResource("TraBtnStyle");
+            var dicBtnStyle = (Style)FindResource("DicBtnStyleDown");
+            TraBtn.Style = traBtnStyle;
+            DicBtn.Style = dicBtnStyle;
         }
 
         private void TraBtn_OnClick(object sender, RoutedEventArgs e)
@@ -62,6 +69,11 @@ namespace KoalaDictDemo
             
             Dic.Visibility = Visibility.Hidden;
             Tra.Visibility = Visibility.Visible;
+            if (Tra.Visibility != Visibility.Visible) return;
+            var traBtnStyle = (Style)FindResource("TraBtnStyleDown");
+            var dicBtnStyle = (Style) FindResource("DicBtnStyle");
+            TraBtn.Style = traBtnStyle;
+            DicBtn.Style = dicBtnStyle;
         }
 
         private void MinBtn_OnClick(object sender, RoutedEventArgs e)
