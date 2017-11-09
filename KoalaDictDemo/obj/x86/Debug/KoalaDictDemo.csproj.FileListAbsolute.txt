@@ -104,3 +104,4 @@ C:\Users\YDW\Desktop\KoalaDict\KoalaDictDemo\obj\x86\Debug\KoalaDictDemo.csproj.
 C:\Users\YDW\Desktop\KoalaDict\KoalaDictDemo\obj\x86\Debug\KoalaDictDemo.csproj.CoreCompileInputs.cache
 C:\Users\YDW\Desktop\KoalaDict\KoalaDictDemo\obj\x86\Debug\KoalaDictDemo.exe
 C:\Users\YDW\Desktop\KoalaDict\KoalaDictDemo\obj\x86\Debug\KoalaDictDemo.pdb
+F:\Git\KoalaDictDemo\KoalaDictDemo\obj\x86\Debug\Style\LoginStyle.baml

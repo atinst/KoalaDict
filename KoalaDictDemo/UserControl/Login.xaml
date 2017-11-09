@@ -57,11 +57,11 @@
         <TextBox x:Name="UserBox" 
                  Grid.Row="1"
                  Width="180"
-                 Height="27"
+                 Height="30"
                  FontSize="15"
                  InputMethod.IsInputMethodEnabled="False"
                  VerticalContentAlignment="Center"
-                 Margin="55,145,55,183"  />
+                 Margin="55,145,55,180" Style="{StaticResource TextBoxStyle}"  />
 
         <PasswordBox Name="PassBox"
                      Grid.Row="1"

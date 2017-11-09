@@ -34,22 +34,22 @@ namespace KoalaDictDemo
 
             public void OnBeforeContextMenu(IWebBrowser browserControl, IBrowser browser, IFrame frame, IContextMenuParams parameters, IMenuModel model)
             {
-                //清除上下文菜单
+                //  清除上下文菜单
                 model.Clear();
-                //throw new NotImplementedException();
+                //  throw new NotImplementedException();
             }
 
 
             public bool OnContextMenuCommand(IWebBrowser browserControl, IBrowser browser, IFrame frame, IContextMenuParams parameters, CefMenuCommand commandId, CefEventFlags eventFlags)
             {
-                // throw new NotImplementedException();
+                //  throw new NotImplementedException();
                 return false;
             }
 
 
             public void OnContextMenuDismissed(IWebBrowser browserControl, IBrowser browser, IFrame frame)
             {
-                //    throw new NotImplementedException();
+                //  throw new NotImplementedException();
             }
 
 

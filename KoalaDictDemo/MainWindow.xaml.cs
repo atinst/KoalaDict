@@ -41,6 +41,7 @@ namespace KoalaDictDemo
             InitializeComponent();
             Dic.ChromiumWeb.Address = @"http://www.52yee.com/";
             CBtn = CloBtn_OnClick;
+
         }
        
 
@@ -66,6 +67,7 @@ namespace KoalaDictDemo
         private void MinBtn_OnClick(object sender, RoutedEventArgs e)
         {
             WindowState = WindowState.Minimized;
+            Topmost = false;
         }
 
         /// <summary>

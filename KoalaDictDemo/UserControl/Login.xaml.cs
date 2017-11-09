@@ -23,6 +23,7 @@ namespace KoalaDictDemo
         public Login()
         {
             InitializeComponent();
+            UserBox.Focus();
         }
 
         private void LoginBtn_OnClick(object sender, RoutedEventArgs e)
