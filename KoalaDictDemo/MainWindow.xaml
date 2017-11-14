@@ -75,13 +75,17 @@
                Width="19" 
                Height="34"          
                Grid.Row="0"
-               Grid.Column="2" Grid.ColumnSpan="2" Margin="1,13,311,13"  />
+               Grid.Column="2" 
+               Grid.ColumnSpan="2" 
+               Margin="1,13,311,13"  />
 
         <Image Source="Image/SearchBoxRight.png" 
                Width="19" 
                Height="34"
                Grid.Row="0"
-               Grid.Column="3" Grid.ColumnSpan="2" Margin="311,13,1,13"  />
+               Grid.Column="3" 
+               Grid.ColumnSpan="2" 
+               Margin="311,13,1,13"  />
 
         <TextBox Name="SearchBox" 
                  Margin="0,13"

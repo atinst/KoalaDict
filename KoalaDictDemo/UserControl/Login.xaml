@@ -72,7 +72,7 @@
                      KeyDown="PassBox_OnKeyDown"
                      VerticalContentAlignment="Center"
                      Margin="55,195,55,130" 
-                     Style="{StaticResource BluePassWordBoxStyle}" />
+                     Style="{StaticResource BluePassWordBoxStyle}"  />
 
         <Button Name="LoginBtn"
                 Grid.Row="1" 
