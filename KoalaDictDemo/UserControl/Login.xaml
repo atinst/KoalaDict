@@ -13,10 +13,10 @@
         BorderThickness="10"
         Topmost="True" 
         ResizeMode="NoResize" 
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"  >
 
     <Window.Effect>
-        <DropShadowEffect BlurRadius="15" Color="Black" ShadowDepth="0"/>
+        <DropShadowEffect BlurRadius="15" Color="Black" ShadowDepth="0"  />
     </Window.Effect>
 
     <Grid Background="#F5F5F5">
@@ -67,29 +67,20 @@
         <PasswordBox Name="PassBox"
                      Grid.Row="1"
                      Width="180"
-                     Height="27"
+                     Height="30"
                      FontSize="15"
                      KeyDown="PassBox_OnKeyDown"
                      VerticalContentAlignment="Center"
-                     Margin="55,195,55,133"  />
+                     Margin="55,195,55,130" 
+                     Style="{StaticResource BluePassWordBoxStyle}" />
 
         <Button Name="LoginBtn"
                 Grid.Row="1" 
                 Content="登  录" 
                 FontSize="15"
                 Click="LoginBtn_OnClick" 
-                Margin="95,245,95,80"
-                
-                Style="{StaticResource BlueBtnStyle}" >
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-0.039"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Button.RenderTransform>
-        </Button>
+                Margin="95,255,95,70"
+                Style="{StaticResource BlueBtnStyle}"  />
 
 
     </Grid>
