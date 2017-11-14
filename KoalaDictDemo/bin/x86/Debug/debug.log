@@ -209,3 +209,20 @@
 [1114/115036.685:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
 [1114/115041.206:WARNING:quota_manager.cc(1833)] Create directory failed for path
 [1114/115041.207:WARNING:quota_manager.cc(1833)] Create directory failed for path
+[1114/153843.073:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+[1114/153858.084:WARNING:quota_manager.cc(1833)] Create directory failed for path
+[1114/153858.093:WARNING:quota_manager.cc(1833)] Create directory failed for path
+[1114/153858.157:WARNING:quota_manager.cc(1833)] Create directory failed for path
+[1114/154513.154:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+[1114/154518.077:WARNING:quota_manager.cc(1833)] Create directory failed for path
+[1114/154518.077:WARNING:quota_manager.cc(1833)] Create directory failed for path
+[1114/154518.156:WARNING:quota_manager.cc(1833)] Create directory failed for path
+[1114/154518.157:WARNING:quota_manager.cc(1833)] Create directory failed for path
+[1114/154621.754:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+[1114/154625.450:WARNING:quota_manager.cc(1833)] Create directory failed for path
+[1114/154625.450:WARNING:quota_manager.cc(1833)] Create directory failed for path
+[1114/154906.082:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+[1114/154957.558:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+[1114/155002.366:WARNING:quota_manager.cc(1833)] Create directory failed for path
+[1114/155002.367:WARNING:quota_manager.cc(1833)] Create directory failed for path
+[1114/155002.368:WARNING:quota_manager.cc(1833)] Create directory failed for path

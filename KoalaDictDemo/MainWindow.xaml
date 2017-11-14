@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:KoalaDictDemo"
         xmlns:ico="http://www.hardcodet.net/taskbar"
         mc:Ignorable="d"
-        Title="MainWindow" 
+        Title="考拉翻译俄语词典" 
         Height="620" 
         Width="920" 
         WindowStyle="None" 

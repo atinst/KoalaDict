@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KoalaDictDemo"
         mc:Ignorable="d"
-        Title="Login"
+        Title="欢迎使用考拉翻译"
         Width="310"
         Height="410" 
         WindowStyle="None" 
@@ -62,7 +62,7 @@
                  InputMethod.IsInputMethodEnabled="False"
                  VerticalContentAlignment="Center"
                  Margin="55,145,55,180" 
-                 Style="{StaticResource TextBoxStyle}"  />
+                 Style="{StaticResource BlueTextBoxStyle}"  />
 
         <PasswordBox Name="PassBox"
                      Grid.Row="1"
@@ -80,7 +80,7 @@
                 Click="LoginBtn_OnClick" 
                 Margin="95,245,95,80"
                 
-                Style="{StaticResource BtnStyle}" >
+                Style="{StaticResource BlueBtnStyle}" >
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

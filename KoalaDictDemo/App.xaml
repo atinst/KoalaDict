@@ -7,12 +7,10 @@
         <ResourceDictionary>
             
             <ResourceDictionary.MergedDictionaries>
-                
-                <ResourceDictionary Source="Style/MainBtnStyle.xaml"></ResourceDictionary>
-              
+               
                 <ResourceDictionary Source="Style/TrayBtnStyle.xaml"></ResourceDictionary>
                 
-                <ResourceDictionary Source="Style/TextBoxStyle.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Style/StyleDictionary.xaml"></ResourceDictionary>
               
             </ResourceDictionary.MergedDictionaries>
 

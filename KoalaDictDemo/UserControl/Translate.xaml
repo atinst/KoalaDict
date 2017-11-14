@@ -23,7 +23,7 @@
                  LostFocus="InBox_OnLostFocus"
                  Margin="30,30,30,15"
                  Grid.Row="0"
-                 Style="{StaticResource TextBoxStyle}"  />
+                 Style="{StaticResource BlueTextBoxStyle}"  />
         
         <TextBox Name="OutBox" 
                  Text="译文自动显示在这里" 
@@ -33,7 +33,7 @@
                  IsReadOnly="True" 
                  Margin="30,15,30,30"
                  Grid.Row="2" 
-                 Style="{StaticResource TextBoxStyle}"  />
+                 Style="{StaticResource BlueTextBoxStyle}"  />
         
         <Button Name="TransBtn" 
                 Content="自动翻译"
@@ -42,7 +42,7 @@
                 FontSize="16"
                 Click="TransBtn_OnClick"
                 Grid.Row="1"  
-                Style="{StaticResource BtnStyle}"  />
+                Style="{StaticResource BlueBtnStyle}"  />
        
 
     </Grid>

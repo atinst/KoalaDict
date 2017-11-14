@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/translatebtndown.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("koalaico.ico")]
 
 
