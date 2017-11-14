@@ -38,7 +38,7 @@
                 Style="{StaticResource CloBtnStyle}" 
                 Grid.Row="0" 
                 Margin="260,5,5,5"  />
-        
+
         <Label Content="考拉翻译"
                Width="100"
                Height="40"
@@ -61,7 +61,8 @@
                  FontSize="15"
                  InputMethod.IsInputMethodEnabled="False"
                  VerticalContentAlignment="Center"
-                 Margin="55,145,55,180" Style="{StaticResource TextBoxStyle}"  />
+                 Margin="55,145,55,180" 
+                 Style="{StaticResource TextBoxStyle}"  />
 
         <PasswordBox Name="PassBox"
                      Grid.Row="1"
@@ -71,16 +72,25 @@
                      KeyDown="PassBox_OnKeyDown"
                      VerticalContentAlignment="Center"
                      Margin="55,195,55,133"  />
-                
+
         <Button Name="LoginBtn"
                 Grid.Row="1" 
-                Content="登陆"
-                Width="60" 
-                Height="27" 
+                Content="登  录" 
                 FontSize="15"
                 Click="LoginBtn_OnClick" 
-                Margin="115,245,115,83"  />
-        
-        
+                Margin="95,245,95,80"
+                
+                Style="{StaticResource BtnStyle}" >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.039"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
+
     </Grid>
 </Window>

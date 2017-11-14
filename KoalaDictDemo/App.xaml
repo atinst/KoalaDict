@@ -12,7 +12,7 @@
               
                 <ResourceDictionary Source="Style/TrayBtnStyle.xaml"></ResourceDictionary>
                 
-                <ResourceDictionary Source="Style/LoginStyle.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Style/TextBoxStyle.xaml"></ResourceDictionary>
               
             </ResourceDictionary.MergedDictionaries>
 

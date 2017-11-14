@@ -6,11 +6,12 @@
     <Style x:Key="TextBoxStyle" TargetType="{x:Type TextBox}">
         <Setter Property="Padding" Value="6,6"/>
         <Setter Property="Background" Value="#fff"/>
-        <Setter Property="Foreground" Value="#555"/>
+        <!--<Setter Property="Foreground" Value="#555"/>-->
+        <Setter Property="Foreground" Value="Black"/>
         <Setter Property="BorderBrush" Value="#ccc"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="HorizontalContentAlignment" Value="Left"/>
-        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <!--<Setter Property="VerticalContentAlignment" Value="Center"/>-->
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Control}">
@@ -65,6 +66,60 @@
             </Trigger>
         </Style.Triggers>
     </Style>
-    
+
+    <Style x:Key="BtnStyle" TargetType="{x:Type Button}">
+        <!--<Setter Property="Width" Value="80"/>
+        <Setter Property="Height" Value="30"/>-->
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Background" Value="#00A0E9"/>
+        <Setter Property="BorderBrush" Value="Transparent"></Setter>
+        <!--<Setter Property="Margin" Value="0,0,10,0"/>-->
+        <Setter Property="Cursor" Value="Hand"/>
+        <!--<Setter Property="FontSize" Value="12"/>-->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Border x:Name="border" CornerRadius="4" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Padding="0" SnapsToDevicePixels="true">
+                            <!--点击时显示-->
+                            <Grid x:Name="PressedLayer" Visibility="Collapsed">
+                                <Rectangle Height="3" VerticalAlignment="Top" Fill="#1F000000" RadiusX="4" RadiusY="4">
+                                    <Rectangle.Effect>
+                                        <BlurEffect Radius="5"></BlurEffect>
+                                    </Rectangle.Effect>
+                                </Rectangle>
+                                <Border CornerRadius="4" BorderBrush="#1F000000" BorderThickness="1,0">
+                                    <Border.Effect>
+                                        <BlurEffect Radius="3"></BlurEffect>
+                                    </Border.Effect>
+                                </Border>
+                            </Grid>
+                        </Border>
+                        <Border BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                        </Border>
+                        <!--禁用时显示-->
+                        <Rectangle x:Name="EnabledLayer" Fill="#4CFFFFFF" RadiusX="4" RadiusY="4" Visibility="Collapsed"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="true">
+                            <Setter TargetName="PressedLayer" Property="Visibility" Value="Visible"/>
+                            <Setter TargetName="border" Property="BorderBrush" Value="#80cccccc"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter TargetName="EnabledLayer" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#00BFFF"/>
+                            
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
 
 </ResourceDictionary>

@@ -22,7 +22,8 @@
                  GotFocus="InBox_OnGotFocus"
                  LostFocus="InBox_OnLostFocus"
                  Margin="30,30,30,15"
-                 Grid.Row="0"  />
+                 Grid.Row="0"
+                 Style="{StaticResource TextBoxStyle}"  />
         
         <TextBox Name="OutBox" 
                  Text="译文自动显示在这里" 
@@ -31,10 +32,18 @@
                  Foreground="Gray"
                  IsReadOnly="True" 
                  Margin="30,15,30,30"
-                 Grid.Row="2"  />
+                 Grid.Row="2" 
+                 Style="{StaticResource TextBoxStyle}"  />
         
-        <Button Name="TransBtn" Content="自动翻译" Width="100" Height="30" FontSize="16" Click="TransBtn_OnClick" Grid.Row="1"/>
-        <Button Name="DelBtn" Visibility="Hidden" Grid.Row="0"></Button>
+        <Button Name="TransBtn" 
+                Content="自动翻译"
+                Width="100"
+                Height="30" 
+                FontSize="16"
+                Click="TransBtn_OnClick"
+                Grid.Row="1"  
+                Style="{StaticResource BtnStyle}"  />
+       
 
     </Grid>
 </UserControl>

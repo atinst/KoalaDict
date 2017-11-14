@@ -72,22 +72,20 @@
                Margin="60,0,5,0"  />
 
         <Image Source="Image/SearchBoxLeft.png"
-               Width="19"
-               Height="38"
-               Margin="0,11" 
+               Width="19" 
+               Height="34"          
                Grid.Row="0"
-               Grid.Column="2"  />
+               Grid.Column="2" Grid.ColumnSpan="2" Margin="1,13,311,13"  />
 
         <Image Source="Image/SearchBoxRight.png" 
                Width="19" 
-               Height="38"
-               Margin="0,11"
+               Height="34"
                Grid.Row="0"
-               Grid.Column="4"  />
+               Grid.Column="3" Grid.ColumnSpan="2" Margin="311,13,1,13"  />
 
         <TextBox Name="SearchBox" 
-                 Margin="0,11,19,11"
-                 FontSize="19"
+                 Margin="0,13"
+                 FontSize="17"
                  BorderBrush="Transparent"
                  BorderThickness="0"
                  Foreground="Gray"
@@ -97,8 +95,7 @@
                  LostFocus="SearchBox_OnLostFocus"
                  VerticalContentAlignment="Center" 
                  Grid.Row="0" 
-                 Grid.Column="3" 
-                 Grid.ColumnSpan="2"  />
+                 Grid.Column="3"  />
 
         <Button Name="SearBtn"
                 Style="{StaticResource SearBtnStyle}"
