@@ -42,7 +42,43 @@
                 FontSize="16"
                 Click="TransBtn_OnClick"
                 Grid.Row="1"  
-                Style="{StaticResource BlueBtnStyle}"  />
+                Style="{StaticResource BlueBtnStyle}" Margin="560,10,100,10"  />
+
+        <ComboBox Name="LanguageSelected" 
+                  Grid.Row="1" 
+                  Width="130"
+                  Height="30"
+                  Margin="100,10,530,10"
+                  FontSize="16"  >
+            
+            <ComboBoxItem>中文</ComboBoxItem>
+            <ComboBoxItem>日文</ComboBoxItem>
+            <ComboBoxItem>英文</ComboBoxItem>
+            <ComboBoxItem>韩文</ComboBoxItem>
+            <ComboBoxItem>法文</ComboBoxItem>
+            <ComboBoxItem>俄文</ComboBoxItem>
+            <ComboBoxItem>葡萄牙文</ComboBoxItem>
+            <ComboBoxItem>西班牙文</ComboBoxItem>
+            
+        </ComboBox>
+        
+        <ComboBox Name="OutLanguage" 
+                  Grid.Row="1"
+                  Width="130"
+                  Height="30" 
+                  Margin="300,10,330,10"
+                  FontSize="16"  >
+            
+            <ComboBoxItem>中文</ComboBoxItem>
+            <ComboBoxItem>日文</ComboBoxItem>
+            <ComboBoxItem>英文</ComboBoxItem>
+            <ComboBoxItem>韩文</ComboBoxItem>
+            <ComboBoxItem>法文</ComboBoxItem>
+            <ComboBoxItem>俄文</ComboBoxItem>
+            <ComboBoxItem>葡萄牙文</ComboBoxItem>
+            <ComboBoxItem>西班牙文</ComboBoxItem>
+            
+        </ComboBox>
        
 
     </Grid>

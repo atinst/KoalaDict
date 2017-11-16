@@ -17,7 +17,8 @@ namespace KoalaDictDemo
     {
         public Translate()
         {
-            InitializeComponent();           
+            InitializeComponent();
+            
         }
 
         private void TransBtn_OnClick(object sender, RoutedEventArgs e)
