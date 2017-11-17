@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Security.Cryptography;
@@ -15,18 +16,24 @@ namespace KoalaDictDemo
     /// </summary>
     public partial class Translate : UserControl
     {
+        public string Selected = "";
+        public string Out = "";
         public Translate()
         {
             InitializeComponent();
-            
+            var country = new List<string> { "中文", "日文", "英文", "韩文", "法文", "俄文", "葡萄牙文", "西班牙文" };
+            LanguageSelected.ItemsSource = country;
+            LanguageOut.ItemsSource = country;
+
+
         }
 
-        private void TransBtn_OnClick(object sender, RoutedEventArgs e)
+        public void _Translate()
         {
             var i = InBox.Text;
             const string appKey = "76f727cb09492e92";
-            const string from = "ru";
-            const string to = "zh-CHS";
+            var from = Selected;
+            var to = Out;
             var salt = DateTime.Now.Millisecond.ToString();
             const string appSecret = "3Chbu5plRETDsjHfMZgbXIuiY2CCgp90";
             MD5 md5 = new MD5CryptoServiceProvider();
@@ -42,20 +49,95 @@ namespace KoalaDictDemo
             if (stream == null) return;
             var reader = new StreamReader(stream, encode);
             var results = reader.ReadToEnd();
-            var type = new {translation = new string[0]};
+            var type = new { translation = new string[0] };
             var reType = JsonConvert.DeserializeAnonymousType(results, type);
             var temp = reType.translation[0];
             OutBox.Text = temp;
             var brush = new SolidColorBrush(Colors.Black);
             OutBox.Foreground = brush;
-            
 
+        }
+        private void TransBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            if (LanguageSelected.SelectedItem == null || LanguageOut.SelectedItem == null || InBox.Text == "请输入要翻译的内容") return;
+
+
+            switch (LanguageSelected.SelectedItem.ToString())
+            {
+                case "中文":
+                    Selected = "zh-CHS";
+                    break;
+
+                case "日文":
+                    Selected = "ja";
+                    break;
+
+                case "英文":
+                    Selected = "EN";
+                    break;
+
+                case "韩文":
+                    Selected = "ko";
+                    break;
+
+                case "法文":
+                    Selected = "fr";
+                    break;
+
+                case "俄文":
+                    Selected = "ru";
+                    break;
+
+                case "葡萄牙文":
+                    Selected = "pt";
+                    break;
+
+                case "西班牙文":
+                    Selected = "es";
+                    break;
+            }
+
+            switch (LanguageOut.SelectedItem.ToString())
+            {
+                case "中文":
+                    Out = "zh-CHS";
+                    break;
+
+                case "日文":
+                    Out = "ja";
+                    break;
+
+                case "英文":
+                    Out = "EN";
+                    break;
+
+                case "韩文":
+                    Out = "ko";
+                    break;
+
+                case "法文":
+                    Out = "fr";
+                    break;
+
+                case "俄文":
+                    Out = "ru";
+                    break;
+
+                case "葡萄牙文":
+                    Out = "pt";
+                    break;
+
+                case "西班牙文":
+                    Out = "es";
+                    break;
+            }
+            _Translate();
         }
 
         private void InBox_OnGotFocus(object sender, RoutedEventArgs e)
         {
             var brush = new SolidColorBrush(Colors.Black);
-            if (InBox.Text != "请输入要翻译的俄文") return;
+            if (InBox.Text != "请输入要翻译的内容") return;
             InBox.Foreground = brush;
             InBox.Text = "";
         }
@@ -65,7 +147,7 @@ namespace KoalaDictDemo
             var brush = new SolidColorBrush(Colors.Gray);
             if (InBox.Text != "") return;
             InBox.Foreground = brush;
-            InBox.Text = "请输入要翻译的俄文";
+            InBox.Text = "请输入要翻译的内容";
         }
     }
 }

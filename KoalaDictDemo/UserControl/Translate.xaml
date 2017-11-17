@@ -6,16 +6,16 @@
              xmlns:local="clr-namespace:KoalaDictDemo"
              mc:Ignorable="d" 
              d:DesignHeight="540" d:DesignWidth="760">
-    
+
     <Grid Background="#F0F0F0">
         <Grid.RowDefinitions>
             <RowDefinition Height="245*"/>
             <RowDefinition Height="50"/>
             <RowDefinition Height="245*"/>
         </Grid.RowDefinitions>
-        
+
         <TextBox Name="InBox" 
-                 Text="请输入要翻译的俄文"
+                 Text="请输入要翻译的内容"
                  FontSize="16" 
                  BorderBrush="#00A0E9"
                  Foreground="Gray"
@@ -24,7 +24,7 @@
                  Margin="30,30,30,15"
                  Grid.Row="0"
                  Style="{StaticResource BlueTextBoxStyle}"  />
-        
+
         <TextBox Name="OutBox" 
                  Text="译文自动显示在这里" 
                  FontSize="16"
@@ -34,7 +34,7 @@
                  Margin="30,15,30,30"
                  Grid.Row="2" 
                  Style="{StaticResource BlueTextBoxStyle}"  />
-        
+
         <Button Name="TransBtn" 
                 Content="自动翻译"
                 Width="100"
@@ -49,37 +49,20 @@
                   Width="130"
                   Height="30"
                   Margin="100,10,530,10"
-                  FontSize="16"  >
-            
-            <ComboBoxItem>中文</ComboBoxItem>
-            <ComboBoxItem>日文</ComboBoxItem>
-            <ComboBoxItem>英文</ComboBoxItem>
-            <ComboBoxItem>韩文</ComboBoxItem>
-            <ComboBoxItem>法文</ComboBoxItem>
-            <ComboBoxItem>俄文</ComboBoxItem>
-            <ComboBoxItem>葡萄牙文</ComboBoxItem>
-            <ComboBoxItem>西班牙文</ComboBoxItem>
-            
-        </ComboBox>
-        
-        <ComboBox Name="OutLanguage" 
+                  FontSize="16"                  
+                  Style="{DynamicResource ComboBoxStyle}"  />
+
+        <ComboBox Name="LanguageOut" 
                   Grid.Row="1"
                   Width="130"
                   Height="30" 
                   Margin="300,10,330,10"
-                  FontSize="16"  >
-            
-            <ComboBoxItem>中文</ComboBoxItem>
-            <ComboBoxItem>日文</ComboBoxItem>
-            <ComboBoxItem>英文</ComboBoxItem>
-            <ComboBoxItem>韩文</ComboBoxItem>
-            <ComboBoxItem>法文</ComboBoxItem>
-            <ComboBoxItem>俄文</ComboBoxItem>
-            <ComboBoxItem>葡萄牙文</ComboBoxItem>
-            <ComboBoxItem>西班牙文</ComboBoxItem>
-            
-        </ComboBox>
-       
+                  FontSize="16"  />
+
+
+
+
+
 
     </Grid>
 </UserControl>
