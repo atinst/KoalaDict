@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("koalaico.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/%e5%88%a0%20%20%e9%99%a4%20(2).png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/%e5%88%a0%20%20%e9%99%a4%20(3).png")]
 
 

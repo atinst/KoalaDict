@@ -149,5 +149,22 @@ namespace KoalaDictDemo
             InBox.Foreground = brush;
             InBox.Text = "请输入要翻译的内容";
         }
+
+        private void TransformBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            if (LanguageSelected.SelectedItem == null || LanguageOut.SelectedItem == null)return;
+            var languageSelected = LanguageSelected.SelectedItem.ToString();
+            var languageOut = LanguageOut.SelectedItem.ToString();
+            LanguageSelected.Text = languageOut;
+            LanguageOut.Text = languageSelected;
+        }
+
+
+        private void EmptyBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            var brush = new SolidColorBrush(Colors.Gray);
+            InBox.Foreground = brush;
+            InBox.Text = "请输入要翻译的内容";
+        }
     }
 }

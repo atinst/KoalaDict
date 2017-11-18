@@ -22,6 +22,9 @@
                  GotFocus="InBox_OnGotFocus"
                  LostFocus="InBox_OnLostFocus"
                  Margin="30,30,30,15"
+                 TextWrapping="Wrap"
+                 
+                
                  Grid.Row="0"
                  Style="{StaticResource BlueTextBoxStyle}"  />
 
@@ -42,21 +45,41 @@
                 FontSize="16"
                 Click="TransBtn_OnClick"
                 Grid.Row="1"  
-                Style="{StaticResource BlueBtnStyle}" Margin="560,10,100,10"  />
+                Style="{StaticResource BlueBtnStyle}" 
+                Margin="540,10,120,10"  />
 
         <ComboBox Name="LanguageSelected" 
                   Grid.Row="1" 
                   Width="130"
                   Height="30"
-                  Margin="100,10,530,10"
+                  Margin="120,10,510,10"
                   FontSize="16"                  
                   Style="{DynamicResource ComboBoxStyle}"  />
+
+        <Button Name="TransformBtn"
+                Width="25" 
+                Height="25" 
+                Grid.Row="1"
+                Click="TransformBtn_OnClick"
+                Cursor="Hand"
+                Style="{StaticResource TransformBtnStyle}" 
+                Margin="280,13,455,12" />
+
+        <Button Name="EmptyBtn"
+                Width="25" 
+                Height="25" 
+                Grid.Row="0"
+                Click="EmptyBtn_OnClick"
+                Cursor="Hand"
+                Style="{StaticResource EmptyBtnBtnStyle}"
+                
+                Margin="700,200,35,20"  />
 
         <ComboBox Name="LanguageOut" 
                   Grid.Row="1"
                   Width="130"
                   Height="30" 
-                  Margin="300,10,330,10"
+                  Margin="335,10,295,10"
                   FontSize="16"  />
 
 

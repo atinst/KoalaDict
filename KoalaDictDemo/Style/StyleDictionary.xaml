@@ -671,9 +671,54 @@
         </Style.Triggers>
     </Style>
 
+    <!--转换按钮样式--> 
+    <Style x:Key="TransformBtnStyle" TargetType="{x:Type Button}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Image Source="../Image/TransformBlack.png"  Width="25" Height="25"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Image Source="../Image/TransformWhite.png"  Width="25" Height="25"/>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--清空按钮样式-->
+
+    <Style x:Key="EmptyBtnBtnStyle" TargetType="{x:Type Button}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Image Source="../Image/EmptyBtnWhite.png"  Width="25" Height="25"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Image Source="../Image/EmptyBtnBlack.png"  Width="25" Height="25"/>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
 
 
-    
+
+
 
 
 </ResourceDictionary>
