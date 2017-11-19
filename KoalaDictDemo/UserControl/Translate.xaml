@@ -23,8 +23,6 @@
                  LostFocus="InBox_OnLostFocus"
                  Margin="30,30,30,15"
                  TextWrapping="Wrap"
-                 
-                
                  Grid.Row="0"
                  Style="{StaticResource BlueTextBoxStyle}"  />
 
@@ -36,6 +34,7 @@
                  IsReadOnly="True" 
                  Margin="30,15,30,30"
                  Grid.Row="2" 
+                 TextWrapping="Wrap"
                  Style="{StaticResource BlueTextBoxStyle}"  />
 
         <Button Name="TransBtn" 
@@ -63,7 +62,7 @@
                 Click="TransformBtn_OnClick"
                 Cursor="Hand"
                 Style="{StaticResource TransformBtnStyle}" 
-                Margin="280,13,455,12" />
+                Margin="280,13,455,12"  />
 
         <Button Name="EmptyBtn"
                 Width="25" 
@@ -71,8 +70,7 @@
                 Grid.Row="0"
                 Click="EmptyBtn_OnClick"
                 Cursor="Hand"
-                Style="{StaticResource EmptyBtnBtnStyle}"
-                
+                Style="{StaticResource EmptyBtnBtnStyle}" 
                 Margin="700,200,35,20"  />
 
         <ComboBox Name="LanguageOut" 
