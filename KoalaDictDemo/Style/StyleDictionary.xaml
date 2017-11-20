@@ -699,7 +699,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
-                    <Image Source="../Image/EmptyBtnWhite.png"  Width="25" Height="25"/>
+                    <Image Source="../Image/EmptyBtnBlack.png"  Width="25" Height="25"/>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
@@ -708,7 +708,7 @@
                 <Setter Property="Template">
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type Button}">
-                            <Image Source="../Image/EmptyBtnBlack.png"  Width="25" Height="25"/>
+                            <Image Source="../Image/EmptyBtnWhite.png"  Width="25" Height="25"/>
                         </ControlTemplate>
                     </Setter.Value>
                 </Setter>
