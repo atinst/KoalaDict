@@ -157,4 +157,3 @@ F:\Git\KoalaDict\KoalaDictDemo\obj\x86\Debug\KoalaDictDemo.csproj.GenerateResour
 F:\Git\KoalaDict\KoalaDictDemo\obj\x86\Debug\KoalaDictDemo.csproj.CoreCompileInputs.cache
 F:\Git\KoalaDict\KoalaDictDemo\obj\x86\Debug\KoalaDictDemo.exe
 F:\Git\KoalaDict\KoalaDictDemo\obj\x86\Debug\KoalaDictDemo.pdb
-F:\Git\KoalaDict\KoalaDictDemo\obj\x86\Debug\KoalaDictDemo.csprojResolveAssemblyReference.cache

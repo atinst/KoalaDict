@@ -64,14 +64,16 @@
                 Style="{StaticResource TransformBtnStyle}" 
                 Margin="280,13,455,12"  />
 
-        <Button Name="EmptyBtn"
-                Width="25" 
-                Height="25" 
+        <Button Name="EmptyBtn" 
                 Grid.Row="0"
                 Click="EmptyBtn_OnClick"
                 Cursor="Hand"
                 Style="{StaticResource EmptyBtnBtnStyle}" 
-                Margin="700,200,35,20"  />
+                Margin="0,0,35,20" 
+                HorizontalAlignment="Right" 
+                Width="25"
+                Height="25"
+                VerticalAlignment="Bottom"  />
 
         <ComboBox Name="LanguageOut" 
                   Grid.Row="1"

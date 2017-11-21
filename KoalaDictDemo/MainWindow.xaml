@@ -72,26 +72,25 @@
                Margin="60,0,5,0"  />
 
         <Image Source="Image/SearchBoxLeft.png"
-               Width="19" 
+               Width="17" 
                Height="34"          
                Grid.Row="0"
                Grid.Column="2" 
-               Grid.ColumnSpan="2" 
-               Margin="1,13,311,13"  />
+               Margin="2,13,0,13"  />
 
         <Image Source="Image/SearchBoxRight.png" 
-               Width="19" 
+               Width="17" 
                Height="34"
                Grid.Row="0"
-               Grid.Column="3" 
-               Grid.ColumnSpan="2" 
-               Margin="311,13,1,13"  />
+               Grid.Column="4" 
+               Margin="0,13,2,13"  />
 
         <TextBox Name="SearchBox" 
                  Margin="0,13"
                  FontSize="17"
-                 BorderBrush="Transparent"
+                
                  BorderThickness="0"
+                 
                  Foreground="Gray"
                  Padding="0,0,15,0"
                  Text="请输入要查询的单词或词组"
