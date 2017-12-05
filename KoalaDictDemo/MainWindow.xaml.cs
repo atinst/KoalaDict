@@ -20,10 +20,12 @@ using MongoDB.Driver;
 using MongoDB.Bson;
 using MessageBox = System.Windows.MessageBox;
 using Rect = System.Windows.Rect;
+using static KoalaDictDemo.TrayIcon;
 
 
 //using WebBrowser = System.Windows.Forms.WebBrowser;
 public delegate void CBtn(object sender, RoutedEventArgs e);
+public delegate void HBtn();
 
 
 namespace KoalaDictDemo
@@ -34,7 +36,7 @@ namespace KoalaDictDemo
     public partial class MainWindow : Window
     {
         public static CBtn CBtn;
-
+        public static HBtn HBtn;
         private Rect _normal;
 
         public MainWindow()
@@ -42,15 +44,34 @@ namespace KoalaDictDemo
             InitializeComponent();
             Dic.ChromiumWeb.Address = @"http://html6test.com/";
             CBtn = CloBtn_OnClick;
-
+            HBtn = HBtn_OnClick;
 
         }
-       
+
+        private void HBtn_OnClick()
+        {
+            
+            if (Visibility == Visibility.Visible)
+            {
+                ShowInTaskbar = false;
+                Visibility = Visibility.Hidden;
+                Ishow();
+            }
+            else
+            {
+                ShowInTaskbar = true;
+                Visibility = Visibility.Visible;
+                Ihide();
+            }
+            
+        }
+
 
         private void TitleBar_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
         }
+
 
         private void DicBtn_OnClick(object sender, RoutedEventArgs e)
         {

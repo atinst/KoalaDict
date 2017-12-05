@@ -35,8 +35,9 @@
         <Button Name="ShowBtn" 
                 Click="ShowBtn_OnClick" 
                 Margin="0,74,0,108" 
-                Content="   显示主窗口"
+                Content="   隐藏主窗口"
                 HorizontalContentAlignment="Left"
+                
                 Style="{DynamicResource TrayBtnStyle}"  />
         
         <Button Name="FeedbackBtn"

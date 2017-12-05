@@ -14,6 +14,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using static KoalaDictDemo.MainWindow;
 
+public delegate void Ihide();
+public delegate void Ishow();
+
 namespace KoalaDictDemo
 {
 
@@ -22,15 +25,33 @@ namespace KoalaDictDemo
     /// </summary>
     public partial class TrayIcon : UserControl
     {
+        public static Ihide Ihide;
+        public static Ishow Ishow;
         public TrayIcon()
         {
             InitializeComponent();
+            Ihide = Hide_OnClick;
+            Ishow = Show_OnClick;
+
         }
 
         private void ShowBtn_OnClick(object sender, RoutedEventArgs e)
-        {
+        {   
+            HBtn();
             
+
         }
+
+        private void Hide_OnClick()
+        {
+            ShowBtn.Content = "   隐藏主窗口";
+        }
+
+        private void Show_OnClick()
+        {
+            ShowBtn.Content = "   显示主窗口";
+        }
+
 
 
         /// <summary>
